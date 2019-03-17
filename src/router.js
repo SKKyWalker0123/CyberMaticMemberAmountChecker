@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-
+import Student from './views/Student.vue'
+import AddStudent from './views/Addstudent.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -10,6 +11,16 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/student',
+      name: 'studnet',
+      component: Student
+    },
+    {
+      path: '/student/add',
+      name: 'addstudent',
+      component: AddStudent
     },
     {
       path: '/about',
